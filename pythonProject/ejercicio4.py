@@ -1,5 +1,6 @@
 import sqlite3;
 import pandas as pd;
+import altair as alt
 
 con = sqlite3.connect('SISTINF.db');
 
@@ -20,4 +21,6 @@ cols = [column[0] for column in query.description]
 dIPS_User = pd.DataFrame.from_records(data = query.fetchall(), columns = cols)
 
 con.close()
+
+
 
