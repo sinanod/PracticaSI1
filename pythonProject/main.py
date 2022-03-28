@@ -1,9 +1,5 @@
 import json;
 import sqlite3;
-import pandas as pd;
-import statistics;
-
-from tabulate import tabulate
 
 con = sqlite3.connect('SISTINF.db')
 
