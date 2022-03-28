@@ -17,3 +17,4 @@ def sql_select():
     print(str(statistics.pstdev(lista)));
 
 sql_select();
+
