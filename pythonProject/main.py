@@ -8,7 +8,7 @@ from tabulate import tabulate
 con = sqlite3.connect('SISTINF.db')
 
 
-'''def sql_insert_legal(url, cookie, aviso, proteccion, creacion):
+def sql_insert_legal(url, cookie, aviso, proteccion, creacion):
     cursorObj = con.cursor()
     cursorObj.execute(
         "INSERT INTO legal VALUES ('" + url + "','" + cookie + "','" + aviso + "','" + proteccion + "','" + creacion + "') ")
@@ -70,26 +70,6 @@ while i < len(lineas["usuarios"]):
         x = x + 1;
     i = i + 1;
 
-'''
-
-query = con.execute("SELECT * From legal")
-cols = [column[0] for column in query.description]
-dLegal = pd.DataFrame.from_records(data = query.fetchall(), columns = cols)
-
-query = con.execute("SELECT * From users")
-cols = [column[0] for column in query.description]
-dUsers = pd.DataFrame.from_records(data = query.fetchall(), columns = cols)
-
-query = con.execute("SELECT * From fechas_user")
-cols = [column[0] for column in query.description]
-dFechas_User = pd.DataFrame.from_records(data = query.fetchall(), columns = cols)
-
-query = con.execute("SELECT * From ips_user")
-cols = [column[0] for column in query.description]
-dIPS_User = pd.DataFrame.from_records(data = query.fetchall(), columns = cols)
 
 con.close()
-
-
-print(dFechas_User)
 
