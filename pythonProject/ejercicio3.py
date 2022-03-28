@@ -21,11 +21,8 @@ dIPS_User = pd.DataFrame.from_records(data = query.fetchall(), columns = cols)
 
 con.close()
 
+print("La media es:",dUsers['emailsPhising'].describe()['mean'])
 
-print("La media de correos recibidos son: ", dUsers['emailsPhising'].describe()['mean'])
-print("La desviacion estándar de correos recibidos son: ", dUsers['emailsPhising'].describe()['std'])
-print("El valor máximo de correos recibidos es: ", dUsers['emailsTotal'].describe()['max'])
-print("La valor mínimo de correos recibidos es: ", dUsers['emailsTotal'].describe()['min'])
-
-print("El valor máximo de las fechas que se ha iniciado sesión es: ", dFechas_User['fecha'].describe()['top'])
+print("El valor mínimo y máximos es:", dUsers['emailsPhising'].describe()['min'],
+      "y el valor máximo es", dUsers['emailsPhising'].describe()['max'])
 
