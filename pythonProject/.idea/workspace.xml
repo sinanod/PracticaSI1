@@ -27,6 +27,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -68,6 +69,7 @@
       <updated>1648475412946</updated>
       <workItem from="1648475417941" duration="6185000" />
       <workItem from="1648499659934" duration="4526000" />
+      <workItem from="1648561009667" duration="51000" />
     </task>
     <servers />
   </component>
