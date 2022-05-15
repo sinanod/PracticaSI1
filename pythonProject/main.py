@@ -68,4 +68,3 @@ while i < len(lineas["usuarios"]):
 
 
 con.close()
-
